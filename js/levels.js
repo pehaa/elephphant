@@ -309,7 +309,7 @@ $c = salut( ${rIntegers[1]} );`,
   $text .= '!';
   return $text;
 }`,
-		question : `message( '${strings[rIntegers[1]%5]}' );`,
+		question : `love( '${strings[rIntegers[1]%5]}' );`,
 		tip: 'I love ...!'
 	});
 
