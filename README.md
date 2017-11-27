@@ -1,7 +1,7 @@
 # Welcome to Play to meet the elePHPhant
 
 
-Just [start to play](http://wptemplates.pehaa.com/elephphant) to discover the very bases of php.  
+Just [start to play](http://wptemplates.pehaa.com/elephphant) to discover the very basis of php.  
 Inspired by [Silent Teacher](http://silentteacher.toxicode.fr/)
 
 ### Change Log
