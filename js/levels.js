@@ -28,7 +28,7 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[6] + rIntegers[7],
 		boardMarkup : `$a = ${rIntegers[6]};
-		$b = ${rIntegers[7]};`,
+$b = ${rIntegers[7]};`,
 		question : `$a + $b;`,
 		tip: `${rIntegers[6]} + ${rIntegers[7]}`
 	});
@@ -37,7 +37,7 @@ const generateLevels = () => {
 		correctAnswer: "WordPress",
 		isString : true,
 		boardMarkup : `$a = 'Word';
-		$b = 'Press';`,
+$b = 'Press';`,
 		question : `$a . $b;`,
 		tip: 'Your fav CMS'
 	});
@@ -52,7 +52,7 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[1] + rIntegers[2] + 2,
 		boardMarkup : `$a = ${rIntegers[1]};
-		$a = $a + ${rIntegers[2]};`,
+$a = $a + ${rIntegers[2]};`,
 		question : `$a + 2;`,
 		tip: `${rIntegers[1]} + ${rIntegers[2]} + 2`
 	});
@@ -60,7 +60,7 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[3] + 1,
 		boardMarkup : `$a = ${rIntegers[3]};
-		$a += 1;`,
+$a += 1;`,
 		question : `$a;`,
 		tip: `${rIntegers[3]} + 1; (same as $a = $a + 1;)`
 	});
@@ -68,7 +68,7 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[4] - 1,
 		boardMarkup : `$a = ${rIntegers[4]};
-		$a -= 1;`,
+$a -= 1;`,
 		question : `$a;`,
 		tip: `${rIntegers[4]} - 1; (same as $a = $a - 1;)`
 	});
@@ -76,25 +76,25 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[2] + 2,
 		boardMarkup : `$a = ${rIntegers[2]};
-		$a += 2;`,
+$a += 2;`,
 		question : `$a;`,
 		tip: `${rIntegers[2]} + 2; (same as $a = $a + 2;)`
 	});
 
 	levels.push({
 		correctAnswer: rIntegers[4]+rIntegers[5],
-		boardMarkup : `function hello($a, $b){
-			return $a + $b;  
-		}`,
+		boardMarkup : `function hello($a, $b) {
+  return $a + $b;  
+}`,
 		question : `hello(${rIntegers[4]}, ${rIntegers[5]});`,
 		tip: `hello's mission is to add the numbers: ${rIntegers[4]} + ${rIntegers[5]}`
 	});
 
 	levels.push({
 		correctAnswer: rIntegers[1]*rIntegers[3],
-		boardMarkup : `function hello($a, $b){
-			return $a * $b;  
-		}`,
+		boardMarkup : `function hello($a, $b) {
+  return $a * $b;  
+}`,
 		question : `hello(${rIntegers[1]}, ${rIntegers[3]});`,
 		tip: `hello's mission is to multiply the numbers: ${rIntegers[1]} * ${rIntegers[3]}`
 	});
@@ -182,44 +182,44 @@ const generateLevels = () => {
 		correctAnswer: rIntegers[7] > 3 ? 'win' : 'lose',
 		isString : true,
 		boardMarkup : `$random = ${rIntegers[7]};
-		if ( $random > 3 ) {,
-			$a = 'win';
-		} else {
-			$a = 'lose';
-		}`,
+if ( $random > 3 ) {,
+  $a = 'win';
+} else {
+  $a = 'lose';
+}`,
 		question : `$a;`,
 		tip: `win or lose?`
 	});
 	levels.push({
 		correctAnswer: rIntegers[1] === rIntegers[2] ? 10000 : 10,
 		boardMarkup : `$random = ${rIntegers[1]};
-		$price = 10;
-		if ( $random === ${rIntegers[2]} ) {
-			$price = 10000;
-		}`,
+$price = 10;
+if ( $random === ${rIntegers[2]} ) {
+  $price = 10000;
+}`,
 		question : `$price;`
 	});
 	levels.push({
 		correctAnswer: rIntegers[1] === 7 ? 10000 : (rIntegers[1] > 5 ? 100 : 10),
 		boardMarkup : `$random = ${rIntegers[1]};
-		if ( $random === 7 ) {
-			$price = 10000;
-		} elseif ( $random > 5 ) {
-			$price = 100;
-		} else {
-			$price = 10;
-		}`,
+if ( $random === 7 ) {
+  $price = 10000;
+} elseif ( $random > 5 ) {
+  $price = 100;
+} else {
+  $price = 10;
+}`,
 		question : `$price;`
 	});
 
 	levels.push({
 		correctAnswer: 2*rIntegers[1] + rIntegers[2],
 		boardMarkup : `function hi( $a, $b ) {
-			if ( $a < $b ) {
-				return $a + $b;
-			} else {
-				return $a * $b;
-			}
+if ( $a < $b ) {
+  return $a + $b;
+} else {
+  return $a * $b;
+}
 		}`,
 		question : `hi(${rIntegers[1]}, ${rIntegers[1] + rIntegers[2]});`,
 		tip: `${rIntegers[1]} + ${rIntegers[1] + rIntegers[2]}`
@@ -228,12 +228,12 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: (1+rIntegers[3]) * rIntegers[3],
 		boardMarkup : `function hi( $a, $b ) {
-			if ( $a < $b ) {
-				return $a + $b;
-			} else {
-				return $a * $b;
-			}
-		}`,
+  if ( $a < $b ) {
+    return $a + $b;
+  } else {
+    return $a * $b;
+  }
+}`,
 		question : `hi(${rIntegers[3]+1}, ${rIntegers[3]});`,
 		tip: `${rIntegers[3]+1} * ${rIntegers[3]}`
 	});
@@ -241,12 +241,12 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[4] * rIntegers[4],
 		boardMarkup : `function hi( $a, $b ) {
-			if ( $a < $b ) {
-				return $a + $b;
-			} else {
-				return $a * $b;
-			}
-		}`,
+  if ( $a < $b ) {
+    return $a + $b;
+  } else {
+    return $a * $b;
+  }
+}`,
 		question : `hi(${rIntegers[4]}, ${rIntegers[4]});`,
 		tip: `${rIntegers[4]} * ${rIntegers[4]}`
 	});
@@ -254,11 +254,11 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: rIntegers[1] * rIntegers[2] + rIntegers[2]+ rIntegers[3],
 		boardMarkup : `function hi( $a, $b ) {
-			return $a * $b;
-		}
-		function hello( $a, $b ){
-			return $a + $b;
-		}`,
+  return $a * $b;
+}
+function hello( $a, $b ){
+  return $a + $b;
+}`,
 		question : `hi(${rIntegers[1]}, ${rIntegers[2]}) + hello(${rIntegers[2]}, ${rIntegers[3]});`,
 		tip: `(${rIntegers[1]} * ${rIntegers[2]}) + (${rIntegers[2]} + ${rIntegers[3]})`
 	});
@@ -266,26 +266,26 @@ const generateLevels = () => {
 	levels.push({
 		correctAnswer: (rIntegers[1] + 1) * rIntegers[2],
 		boardMarkup : `function salut( $a ) {
-			return $a + 1;
-		}
-		function hi( $a, $b ){
-			return $a * $b;
-		}
-		$c = salut( ${rIntegers[1]} );`,
+  return $a + 1;
+}
+function hi( $a, $b ){
+  return $a * $b;
+}
+$c = salut( ${rIntegers[1]} );`,
 		question : `hi( $c, ${rIntegers[2]} );`,
 		tip: `hi( ${rIntegers[1]+1}, ${rIntegers[2]} );`
 	});
 	levels.push({
 		correctAnswer: rIntegers[1] === 1 ? 12 : ( rIntegers[1] === 2 ? 18 : rIntegers[1]*7),
 		boardMarkup : `function dog_age( $a ) {
-			if ( $a === 1 ){
-				return 12;
-			} elseif ( $a === 2 ) {
-				return 18;
-			} else {
-				return 7*$a;
-			}
-		}`,
+  if ( $a === 1 ){
+    return 12;
+  } elseif ( $a === 2 ) {
+    return 18;
+  } else {
+    return 7*$a;
+  }
+}`,
 		question : `dog_age( ${rIntegers[1]} );`
 	});
 
@@ -293,8 +293,8 @@ const generateLevels = () => {
 		isString: true,
 		correctAnswer: 'PHP is the best!',
 		boardMarkup : `function message( $name ) {
-			return $name . ' is the best!';
-		}`,
+  return $name . ' is the best!';
+}`,
 		question : `message( 'PHP' );`
 	});
 
@@ -304,11 +304,11 @@ const generateLevels = () => {
 		isString: true,
 		correctAnswer: `I love ${strings[rIntegers[1]%5]}!`,
 		boardMarkup : `function love( $thing ) {
-			$text = 'I love ';
-			$text .= $thing;
-			$text .= '!';
-			return $text;
-		}`,
+  $text = 'I love ';
+  $text .= $thing;
+  $text .= '!';
+  return $text;
+}`,
 		question : `message( '${strings[rIntegers[1]%5]}' );`,
 		tip: 'I love ...!'
 	});
