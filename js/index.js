@@ -129,16 +129,17 @@ const preformate = ( text, outerClass = '' ) => {
 
 const loadBoard = () => {
 
-	pageSelectors.markup.innerHTML = '';
+	pageSelectors.markup.innerHTML = '<pre>&lt;?php</pre>';
 
 	if ( levels[currentLevel].boardMarkup ) {
-		pageSelectors.markup.innerHTML = preformate( levels[currentLevel].boardMarkup );
+		pageSelectors.markup.innerHTML += preformate( levels[currentLevel].boardMarkup );
 	}
 
 	if ( levels[currentLevel].comment ) {
 		pageSelectors.markup.innerHTML += `<pre style="color:#ccc; font-size: 16px; margin-bottom: 12px"><code>/*${levels[currentLevel].comment}*/</code></pre>`;
 	}
 	pageSelectors.markup.innerHTML += preformate( levels[currentLevel].question, 'question' );
+	pageSelectors.markup.innerHTML += '<pre>?&gt;</pre>';
 	displayTip();
 }
 
